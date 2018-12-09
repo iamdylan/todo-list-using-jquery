@@ -1,5 +1,15 @@
+html{
+	height: 100%; 
+}
+
 body {
 	font-family: Roboto;
+	background: #FBD3E9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #BB377D, #FBD3E9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #BB377D, #FBD3E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: 100%;
+	width: 100%;
+	position: fixed;
 }
 
 ul {
@@ -55,4 +65,25 @@ input:focus{
 	background: #fff;
 	border: 3px solid #2980b9;
 	outline: none;
+}
+
+.fa-pencil-alt {
+	float: right;
+}
+
+span {
+	background: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
 }
