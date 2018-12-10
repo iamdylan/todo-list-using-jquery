@@ -1,15 +1,14 @@
 html{
-	height: 100%; 
+	min-height: 100%;
 }
 
 body {
 	font-family: Roboto;
-	background: #FBD3E9;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to top, #BB377D, #FBD3E9);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to top, #BB377D, #FBD3E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #FBD3E9;   /*fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #BB377D, #FBD3E9);   /*Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #BB377D, #FBD3E9); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+	background-repeat: no-repeat;
 	height: 100%;
-	width: 100%;
-	position: fixed;
 }
 
 ul {
@@ -23,6 +22,7 @@ li {
 	height: 40px;
 	line-height: 40px;
 	color: rgb(0, 0, 0);
+	cursor: pointer;
 }
 
 li:nth-child(even){
@@ -31,7 +31,7 @@ li:nth-child(even){
 
 #container {
 	width: 360px;
-	margin: 100px auto;
+	margin: 50px auto;
 	background: #f7f7f7;
 	box-shadow: 0 0 3px rgba(0,0,0, 0.1);
 }
@@ -45,7 +45,7 @@ h1 {
 	background: #2980b9;
 	color: white;
 	margin: 0;
-	padding: 10px 20px;
+	padding: 10px 10px;
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: normal;
@@ -67,8 +67,20 @@ input:focus{
 	outline: none;
 }
 
-.fa-pencil-alt {
+.fa-plus {
 	float: right;
+	cursor: pointer;
+}
+
+.fa-plus:hover{
+    -webkit-stroke-width: 7.3px;
+	-webkit-stroke-color: #FFFFFF;
+	-webkit-fill-color: #FFFFFF;
+	text-shadow: 1px 0px 20px white;
+}
+
+.fa-pencil-alt{
+	font-size: 40px;
 }
 
 span {
@@ -86,4 +98,5 @@ span {
 li:hover span {
 	width: 40px;
 	opacity: 1.0;
+	cursor: pointer;
 }
